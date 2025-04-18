@@ -15,7 +15,7 @@ export class User {
   @Column()
   sexo: 'Masculino' | 'Femenino' | 'Otro';
 
-  @Column()
+  @Column({ unique: true })
   dni: string;
 
   @Column()
